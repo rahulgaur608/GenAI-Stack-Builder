@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     chroma_persist_directory: str = "./chroma_db"
     
     # OpenRouter (Unified LLM Provider)
-    openrouter_api_key: str = "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"
+    openrouter_api_key: Optional[str] = None
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     
     # Deprecated fields (keeping slightly for backward compat during migration but ignoring)
